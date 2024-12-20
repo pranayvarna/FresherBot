@@ -2,14 +2,14 @@
 This repository showcases two implementations of Retrieval-Augmented Generation (RAG) to answer user queries by combining document retrieval with natural language generation.
 
 # Key Features
-# Task 1 🔍🤖
+# Task 1 🔍
 
 🌐 Website Crawling: Scrapes text data from specified websites.
 
 📊 FAISS Indexing: Embeds and indexes content for efficient similarity search.
 
 🧠 BLOOM: Generates precise and context-aware responses to user queries.
-# Task 2 🧩📚
+# Task 2 📚
 
 ⚡ Enhanced pipeline for faster indexing and improved scalability.
 
@@ -19,9 +19,13 @@ This repository showcases two implementations of Retrieval-Augmented Generation 
 Install the required Python libraries to use the pipeline:
 
 🤗 transformers
+
 🔎 sentence-transformers
+
 🧠 faiss-cpu (or faiss-gpu for better performance)
+
 🥣 beautifulsoup4
+
 🌐 requests
 
 # Acknowledgments 
