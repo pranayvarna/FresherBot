@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PDF Search App</title>
+  <link rel="stylesheet" href="static/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Search PDF</h1>
+    <form method="POST" enctype="multipart/form-data">
+      <input type="file" name="pdf" placeholder="enter the pdf">
+      <input type="submit" value="Upload">
+    </form>
+
+    {% if file_uploaded %}
+      <h2>Search Query:</h2>
+      <form method="POST" action="/query">
+        <input type="text" name="query" placeholder="Enter your search term">
+        <button type="submit">Search</button>
+      </form>
+
+      {% if query %}
+        <h2>Search Results:</h2>
+        {% if results %}
+          <div class="results-section">
+            {% for result in results %}
+              <div class="result-container">
+                <p><b>Sentence:</b> {{ result.sentence }}</p>
+                <p class="page-number"><b>Page:</b> {{ result.page }}</p>
+              </div>
+              <hr>
+            {% endfor %}
+          </div>
+        {% else %}
+          <p>No relevant sentences found for your query.</p>
+        {% endif %}
+      {% endif %}
+    {% endif %}
+
+    {% if error %}
+      <p>{{ error }}</p>
+    {% endif %}
+  </div>
+</body>
+
+</html>
