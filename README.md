@@ -29,9 +29,13 @@ Install the required Python libraries to use the pipeline:
 🌐 requests
 
 # Acknowledgments 
+
 FAISS: For efficient similarity search.
+
 SentenceTransformer: For high-quality text embeddings.
+
 BLOOM: For open-source natural language generation.
+
 💡 Explore, adapt, and contribute to the RAG pipeline to suit your needs! 🌟
 
 
