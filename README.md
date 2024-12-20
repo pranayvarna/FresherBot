@@ -4,6 +4,7 @@ This repository showcases two implementations of Retrieval-Augmented Generation 
 # Key Features
 # Task 1 🔍🤖
 🌐 Website Crawling: Scrapes text data from specified websites.
+
 📊 FAISS Indexing: Embeds and indexes content for efficient similarity search.
 🧠 BLOOM: Generates precise and context-aware responses to user queries.
 # Task 2 🧩📚
